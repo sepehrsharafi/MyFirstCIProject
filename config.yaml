@@ -1,21 +1,21 @@
 # Project Configuration
 project:
   name: MyFirstCIProject
-  version: 1.0.0
-  description: A simple project to learn CI/CD practices
+  version: 0.1.0
+  description: My first JavaScript project to learn CI/CD practices
 
 # Environment Settings
 environment:
-  language: python
-  version: 3.9
+  language: javascript
+  runtime: node
+  version: 14.x
 
 # Build Settings
 build:
+  package_manager: npm
   commands:
-    - echo "No build process defined yet"
+    - npm install
 
-# Test Settings
-test:
-  framework: pytest
-  commands:
-    - echo "No tests defined yet"
+# Start Application
+start:
+  command: npm start
