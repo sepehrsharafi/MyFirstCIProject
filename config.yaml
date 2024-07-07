@@ -1,0 +1,21 @@
+# Project Configuration
+project:
+  name: MyFirstCIProject
+  version: 1.0.0
+  description: A simple project to learn CI/CD practices
+
+# Environment Settings
+environment:
+  language: python
+  version: 3.9
+
+# Build Settings
+build:
+  commands:
+    - echo "No build process defined yet"
+
+# Test Settings
+test:
+  framework: pytest
+  commands:
+    - echo "No tests defined yet"
